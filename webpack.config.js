@@ -2,7 +2,7 @@
 const path = require("path")
 const HtmlPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
-const FaviconPlugin = require("favicons-webpack-plugin")
+// const FaviconPlugin = require("favicons-webpack-plugin")
 
 // export
 module.exports = {
@@ -49,9 +49,9 @@ module.exports = {
                 { from: "static" }
             ]
         }),
-        new FaviconPlugin({
-            logo: "./favicon.ico"
-        })
+        // new FaviconPlugin({
+        //     logo: "./favicon.ico"
+        // })
     ],
 
     devServer: {
